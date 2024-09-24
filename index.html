@@ -36,18 +36,18 @@
               <li><a>Item 4</a></li>
             </ul>
           </div>
-          <a class="cursor-pointer text-xl  md:text-3xl font-extrabold">BUS Ticket</a>
+          <a href="#" class="cursor-pointer text-xl  md:text-3xl font-extrabold">BUS Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal text-xl px-1">
-            <li><a>Item 1</a></li>
-            <li><a>Item 2</a></li>
-            <li><a>Item 3</a></li>
-            <li><a>Item 4</a></li>
+            <li><a>Home</a></li>
+            <li><a>Offers</a></li>
+            <li><a>Bus Sheet</a></li>
+            
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn primary-color bg-[#1DD1001A] border-1 border-[#1DD100] font-bold text-base">Button</a>
+          <a class="btn primary-color bg-[#1DD1001A] border-1 border-[#1DD100] font-bold text-base">Login</a>
         </div>
       </div>
     </div>
@@ -160,7 +160,7 @@
             <button
               class="flex items-center font-medium bg-my-green gap-1 lg:gap-2 py-2 px-2 lg:px-4 rounded-xl primary-color">
               <img class="w-5 h-5" src="./images/seat-green-filled.png" alt="">
-              <span id="left-seet">40</span>
+              <span id="sheet-left">40</span>
               <span>Seats left</span>
             </button>
           </div>
@@ -282,64 +282,64 @@
               </tbody>
             </table>
           </div>
-         <div>
-          <div class="grid grid-cols-5 gap-6 mt-6">
-            <div class="bg-ticket-catagory">A</div>
-            <div id="a1" class="bg-ticket">A1</div>
-            <div class="bg-ticket">A2</div>
-            <div class="bg-ticket">A3</div>
-            <div class="bg-ticket">A4</div>
+          <div>
+            <div class="grid grid-cols-5 gap-6 mt-6">
+              <div class="bg-ticket-catagory">A</div>
+              <button onclick="buyTicket(this)" class="bg-ticket">A1</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">A2</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">A3</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">A4</button>
+            </div>
+            <div class="grid grid-cols-5 gap-6 mt-6">
+              <div class="bg-ticket-catagory">B</div>
+              <button onclick="buyTicket(this)" class="bg-ticket">B1</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">B2</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">B3</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">B4</button>
+            </div>
+            <div class="grid grid-cols-5 gap-6 mt-6">
+              <div class="bg-ticket-catagory">C</div>
+              <button onclick="buyTicket(this)" class="bg-ticket">C1</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">C2</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">C3</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">C4</button>
+            </div>
+            <div class="grid grid-cols-5 gap-6 mt-6">
+              <div class="bg-ticket-catagory">D</div>
+              <button onclick="buyTicket(this)" class="bg-ticket">D1</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">D2</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">D3</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">D4</button>
+            </div>
+            <div class="grid grid-cols-5 gap-6 mt-6">
+              <div class="bg-ticket-catagory">E</div>
+              <button onclick="buyTicket(this)" class="bg-ticket">E1</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">E2</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">E3</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">E4</button>
+            </div>
+            <div class="grid grid-cols-5 gap-6 mt-6">
+              <div class="bg-ticket-catagory">F</div>
+              <button onclick="buyTicket(this)" class="bg-ticket">F1</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">F2</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">F3</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">F4</button>
+            </div>
+            <div class="grid grid-cols-5 gap-6 mt-6">
+              <div class="bg-ticket-catagory">J</div>
+              <button onclick="buyTicket(this)" class="bg-ticket">J1</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">J2</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">J3</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">J4</button>
+            </div>
+            <div class="grid grid-cols-5 gap-6 mt-6">
+              <div class="bg-ticket-catagory">H</div>
+              <button onclick="buyTicket(this)" class="bg-ticket">H1</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">H2</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">H3</button>
+              <button onclick="buyTicket(this)" class="bg-ticket">H4</button>
+            </div>
           </div>
-          <div class="grid grid-cols-5 gap-6 mt-6">
-            <div class="bg-ticket-catagory">B</div>
-            <div class="bg-ticket">B1</div>
-            <div class="bg-ticket">B2</div>
-            <div class="bg-ticket">B3</div>
-            <div class="bg-ticket">B4</div>
-          </div>
-          <div class="grid grid-cols-5 gap-6 mt-6">
-            <div class="bg-ticket-catagory">C</div>
-            <div class="bg-ticket">C1</div>
-            <div class="bg-ticket">C2</div>
-            <div class="bg-ticket">C3</div>
-            <div class="bg-ticket">C4</div>
-          </div>
-          <div class="grid grid-cols-5 gap-6 mt-6">
-            <div class="bg-ticket-catagory">D</div>
-            <div class="bg-ticket">D1</div>
-            <div class="bg-ticket">D2</div>
-            <div class="bg-ticket">D3</div>
-            <div class="bg-ticket">D4</div>
-          </div>
-          <div class="grid grid-cols-5 gap-6 mt-6">
-            <div class="bg-ticket-catagory">E</div>
-            <div class="bg-ticket">E1</div>
-            <div class="bg-ticket">E2</div>
-            <div class="bg-ticket">E3</div>
-            <div class="bg-ticket">E4</div>
-          </div>
-          <div class="grid grid-cols-5 gap-6 mt-6">
-            <div class="bg-ticket-catagory">F</div>
-            <div class="bg-ticket">F1</div>
-            <div class="bg-ticket">F2</div>
-            <div class="bg-ticket">F3</div>
-            <div class="bg-ticket">F4</div>
-          </div>
-          <div class="grid grid-cols-5 gap-6 mt-6">
-            <div class="bg-ticket-catagory">J</div>
-            <div class="bg-ticket">J1</div>
-            <div class="bg-ticket">J2</div>
-            <div class="bg-ticket">J3</div>
-            <div class="bg-ticket">J4</div>
-          </div>
-          <div class="grid grid-cols-5 gap-6 mt-6">
-            <div class="bg-ticket-catagory">H</div>
-            <div class="bg-ticket">H1</div>
-            <div class="bg-ticket">H2</div>
-            <div class="bg-ticket">H3</div>
-            <div class="bg-ticket">H4</div>
-          </div>
-         </div>
         </div>
         <div class="hidden md:block py-8">
           <img class="max-h-screen" src="./images/Line 1.png" alt="">
@@ -353,56 +353,41 @@
           <!-- Ticket Cuopon and Seleted Tickets -->
           <div class="px-5 py-5 bg-[#F7F8F8] mt-5">
             <div class="flex justify-between font-bold text-base pb-3">
-              <h3>Seat <span>2</span></h3>
+              <h3>Seat <span id="seleted-sheet-count">0</span></h3>
               <h3>Class</h3>
               <h3>Price</h3>
             </div>
             <div class="pb-3">
               <img src="./images/Line 2.png" alt="">
             </div>
-            <div class="flex justify-between pb-3">
-              <div>C2</div>
-              <div>Economoy</div>
-              <div>550</div>
-            </div>
-            <div class="flex justify-between pb-3">
-              <div>C2</div>
-              <div>Economoy</div>
-              <div>550</div>
-            </div>
-            <div class="flex justify-between pb-3">
-              <div>C2</div>
-              <div>Economoy</div>
-              <div>550</div>
-            </div>
-            <div class="flex justify-between pb-3">
-              <div>C2</div>
-              <div>Economoy</div>
-              <div>550</div>
-            </div>
-            <hr>
-            <div class="flex justify-between py-3 font-bold font-lg">
-              <h3>Total Price</h3>
-              <h3>BDT 1100</h3>
-            </div>
-            <div class="coupon-content">
-              <input class="input-coupon py-3 px-3 rounded-lg text-lg uppercase" type="text"
-                placeholder="Have any copupon?">
-              <button class="button-apply coupon-btn">Apply</button>
+            <ul id="selected-sheet" class="py-4 px-5 space-y-4 text-lg">
+              <h3 id="default-selected-text" class="text-center font-bold text-3xl py-10">Your Selected Sheet</h3>
+            </ul>
+            <div class="pb-3">
+              <img src="./images/Line 2.png" alt="">
             </div>
             <div class="flex justify-between py-3 font-bold font-lg">
               <h3>Total Price</h3>
-              <h3>BDT 1100</h3>
+              <h3>BDT <span id="total-price">****</span></h3>
+            </div>
+            <div id="coupon-display" class="coupon-content">
+              <input id="discount-input" type="text" placeholder="You can't touch this" class="min-w-full input input-bordered w-full max-w-xs"
+                disabled />
+              <button id="discount-btn" onclick="discountCheck()" class="btn -mt-0 -mr-0 button-apply coupon-btn" disabled>Apply</button>
+            </div>
+            <div class="flex justify-between py-3 font-bold font-lg">
+              <h3>Grand Price</h3>
+              <h3>BDT <span id="grand-total">****</span></h3>
             </div>
           </div>
           <div class="mt-5">
             <h3 class="font-bold pb-2 mt-5">Passenger Name*</h3>
-            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+            <input id="passenger-name" type="text" placeholder="Type here" class="input input-bordered w-full" />
             <h3 class="font-bold pb-2 mt-5">Phone Number*</h3>
-            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+            <input id="passenger-number" type="tel" placeholder="Type here" class="input input-bordered w-full" />
             <h3 class="font-bold pb-2 mt-5">Email ID *</h3>
-            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
-            <button class="button-apply w-full my-5 py-3">Next</button>
+            <input id="passenger-email" type="email" placeholder="Type here" class="input input-bordered w-full" />
+            <button id="submit-btn" class="button-apply w-full my-5 py-3">Submit</button>
             <div class="flex justify-around underline text-gray-400">
               <p><a href="">Terms and Conditions</a></p>
               <p><a href="">Cancellation Policy</a></p>
@@ -468,7 +453,10 @@
     </div>
   </footer>
   <script src="./scripts/utility.js"></script>
-  <script src="./scripts/select-seet.js"></script>
+  <script src="./scripts/passenger-info.js"></script>
+  <script src="./scripts/discount.js"></script>
+  <script src="./scripts/login.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>

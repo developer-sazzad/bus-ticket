@@ -55,10 +55,14 @@
     background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url(/images/banner.png) rgb(255, 255, 255) 50% / cover no-repeat;
 }
 
+.selected-btn{
+    background-color: #1DD100;
+}
+
 .bg-ticket {
     border-radius: 5px;
     font-weight: 500;
-    background-color: #F7F8F8;
+    background-color: #d3d3d3;
     padding: 15px 30px;
     text-align: center;
     cursor: pointer;
@@ -76,6 +80,11 @@
 
 .coupon-content{
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin: 15px 0px;
 }
 .coupon-btn{
     position: absolute;

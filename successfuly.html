@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket</title>
+
+    <!-- Favicon Links -->
+    <link rel="shortcut icon" href="./images/bus-icon.png" type="image/x-icon">
+
+    <!-- DaisyUi and Tailwind CSS Links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS Links -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <section class="min-h-screen flex items-center w-full bg-[#F2F1F1]">
+        <div class="min-h-fit max-w-fit rounded-xl text-center flex flex-col items-center bg-white mx-auto px-16 py-12">
+            <img class="w-20 flex" src="./images/success.png" alt="">
+            <h3 class="text-3xl font-bold text-[#27AE60] mt-6">SUCCESS</h3>
+            <p class="mt-4 mb-2"><span class="font-bold text-lg">Thank you for Booking Our Bus Seats. <br>
+                    We are working hard to find the best service and deals for you.</span>
+                <br>
+                Shortly you will find a confirmation in your email.
+            </p>
+            <button id="continue-btn"
+                class="text-lg font-medium text-white bg-[#27AE60] px-16 py-2 rounded-lg animate-bounce hover:bg-[#2ac76b] mt-5">Continue</button>
+        </div>
+    </section>
+
+    <script src="./scripts/utility.js"></script>
+    <script src="./scripts/passenger-info.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

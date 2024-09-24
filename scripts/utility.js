@@ -1,34 +1,75 @@
+let sheetCountArry = [];
+let totalPrice = 0;
+function totalPriceCalculate(elementId){
+    const sheetPrice = document.getElementById(elementId);
+    totalPrice += 550;
+    sheetPrice.innerText = totalPrice;
+}
 
-// function checkTicket(){
-//     const element = document.getElementById('f4');
-//     if(element.cl){
-//         element.body.style.backgroundColor = 'blue';
-//     }
-// }
+function buyTicket(event) {
+    if (sheetCountArry.includes(event.innerText)) {
+        swal("Sorry !", "You have already select this sheet !", "warning");
+        return;
+    }
+    else if (sheetCountArry.length < 4) {
+        event.classList.add('bg-green-500');
+        event.classList.add('text-white');
 
-// document.getElementById('f4').addEventListener('click', function(){
-//     document.body.style.backgroundColor = 'green';
-// })
+        const text = document.getElementById('default-selected-text');
+        text.classList.add = 'hidden';
+
+        // Sheet Left
+        const sheetLeft = document.getElementById('sheet-left');
+        const sheetLeftValue = sheetLeft.innerText;
+        const sheetLeftInt = parseInt(sheetLeftValue);
+        sheetLeft.innerText = sheetLeftInt - 1;
+
+        // total Price Calculate 
+        totalPriceCalculate('total-price');
+
+        const selectedSheetCount = document.getElementById('seleted-sheet-count');
+        sheetCountArry.push(event.innerText);
+        selectedSheetCount.innerText = sheetCountArry.length;
+
+     
+        // // Default Selected Text
+        // const defaultSelectedText = document.getElementById('default-selected-text');
+        // defaultSelectedText.classList.add('hidden');
+
+        // Add Selected Sheet Element
+        const selectedSheet = document.getElementById('selected-sheet');
+        selectedSheet.innerHTML += `<li class="flex justify-between items-center">
+    <span>${event.innerText}</span>
+    <span>-</span>
+     <span>Sovon Chair</span>
+     <span>-</span>
+    <span>550</span>
+    </li>`
+
+       // Discount Your Passenger
+       discountNewUser();
+       
+    }
+
+    else {
+        swal("Ufss !", "You have already selected 4 sheet !", "error");
+        return;
+    }
+}
 
 
 
-// function changeColor(){
-//     const button = document.getElementsByClassName('.bg-ticket');
-//     if(button.style.backgroundColor === '#fff'){
-//         button.style.backgroundColor = '#000';
-//     }
-//     else{
-//         button.style.backgroundColor = '#fff';
-//     }
-// }
 
-// function seetClick(){
-//     seetLeft('left-seet');
-// }
-console.log('Utility Files')
-document.getElementById('a1').addEventListener('click', function(){
-    const getLeftSeet = document.getElementById('left-seet').innerHTML;
-    // const getLeftSeetString = getLeftSeet.innerHTML;
+
+// Selected Sheet Count
+// const selectedSheetCount = document.getElementById('seleted-sheet-count');
+// const selectedSheetCountText = selectedSheetCount.innerText;
+// const selectedSheetCountInt = parseInt(selectedSheetCountText);
+// selectedSheetCount.innerText = selectedSheetCountInt + 1;
+
+
+
+document.getElementById('continue-btn').addEventListener('click', function(){
+    window.location.href = 'index.html';
     
-    console.log(getLeftSeet);
-})
+});
